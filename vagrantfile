@@ -9,7 +9,7 @@ Vagrant.configure('2') do |config|
   config.vm.box = 'ubuntu/trusty32'
   config.vm.hostname = 'magnolia'
   config.vm.provider "virtualbox" do |v|
-  v.memory = 1024
+  v.memory = 2048
   v.cpus = 1
   end
   config.vm.synced_folder "../devops-dwbn", "/srv/salt/", type: "nfs"
